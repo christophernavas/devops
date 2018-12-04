@@ -1,0 +1,18 @@
+version: "3.1"
+
+services:
+
+  database:
+    image: "postgres:latest"
+    restart: "unless-stopped"
+    environment:
+      POSTGRES_DB: "LA DB DU STAGIAIRE"
+      POSTGRES_USER: "My_DB"
+      POSTGRES_PASSWORD: "awesome"
+    volumes:
+      - "database:/var/lib/postgresql/data"
+    ports:
+      - "5432:5432"
+
+volumes:
+  database:
