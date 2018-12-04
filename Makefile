@@ -1,10 +1,10 @@
-start: 
-  go run
-test:
-cd handler && go test && cd ..
+start: go run main.go
+
+test: 
+	cd handler && go test 
 
 build: test
-  go build
+	go build main.go
 
-infra:
-  terraform apply
+infra: 
+	cd provisions && terraform apply
