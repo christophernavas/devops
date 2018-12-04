@@ -5,6 +5,7 @@ Examen DevOps
 https://github.com/christophernavas/devops/
 
 # Heroku workflow
+Ajout du mail du professeur SAINT-ROCH Loïc en tant que collaborator du workflow Heroku
 
 # Améliorations
 
